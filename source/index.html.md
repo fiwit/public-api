@@ -270,7 +270,7 @@ To list the tickets, just issue a `GET` request to the `/tickets` endpoint
 ```shell
 # Request
 curl "https://www.fiwit.io/tickets" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
   
 # Sample response
@@ -303,7 +303,7 @@ an id (ex: `/tickets/52`)
 ```shell
 # Request
 curl "https://www.fiwit.io/tickets/52" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
   
 # Sample response
@@ -333,7 +333,7 @@ To create a ticket, issue a `POST` request to the `/tickets`endpoint.
 ```shell
 # Request
 curl "https://www.fiwit.io/tickets/" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
   --request POST \
@@ -368,7 +368,7 @@ To update a ticket, issue a `PATCH` request to the `/tickets` endpoint, specifyi
 ```shell
 # Request
 curl "https://www.fiwit.io/tickets/55" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
   --request PATCH \
@@ -402,7 +402,7 @@ using their ID. To get the IDs of all custom fields, issue a request to `/ticket
 ```shell
 # Request
 curl "https://www.fiwit.io/ticket_fields" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
 
   
@@ -433,7 +433,7 @@ You can list all the available ticket types at: `/ticket_types`
 ```shell
 # Request
 curl "https://www.fiwit.io/ticket_types" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
 
   
@@ -464,7 +464,7 @@ To list the locations, just issue a `GET` request to the `/locations` endpoint
 ```shell
 # Request
 curl "https://www.fiwit.io/locations" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
 
 # Sample response
@@ -495,7 +495,7 @@ To list the locations, just issue a `GET` request to the `/users` endpoint
 ```shell
 # Request
 curl "https://www.fiwit.io/teams" \
-  -H "Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih" \
+  -H "Authorization: API_TOKEN" \
   -H "Accept: application/json"
 
 # Sample response

@@ -504,7 +504,7 @@ using the API. </p>
 <p>To list the tickets, just issue a <code>GET</code> request to the <code>/tickets</code> endpoint</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/tickets"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 <span class="c"># Sample response</span>
@@ -531,7 +531,7 @@ curl <span class="s2">"https://www.fiwit.io/tickets"</span> <span class="se">\</
 an id (ex: <code>/tickets/52</code>)</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/tickets/52"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 <span class="c"># Sample response</span>
@@ -555,7 +555,7 @@ curl <span class="s2">"https://www.fiwit.io/tickets/52"</span> <span class="se">
 <p>To create a ticket, issue a <code>POST</code> request to the <code>/tickets</code>endpoint. </p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/tickets/"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span> <span class="se">\</span>
   -H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
   --request POST <span class="se">\</span>
@@ -583,7 +583,7 @@ curl <span class="s2">"https://www.fiwit.io/tickets/"</span> <span class="se">\<
 <p>To update a ticket, issue a <code>PATCH</code> request to the <code>/tickets</code> endpoint, specifying an ID. </p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/tickets/55"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span> <span class="se">\</span>
   -H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
   --request PATCH <span class="se">\</span>
@@ -612,7 +612,7 @@ curl <span class="s2">"https://www.fiwit.io/tickets/55"</span> <span class="se">
 using their ID. To get the IDs of all custom fields, issue a request to <code>/ticket_fields</code> </p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/ticket_fields"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 
@@ -639,7 +639,7 @@ curl <span class="s2">"https://www.fiwit.io/ticket_fields"</span> <span class="s
 You can list all the available ticket types at: <code>/ticket_types</code></p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/ticket_types"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 
@@ -661,7 +661,7 @@ curl <span class="s2">"https://www.fiwit.io/ticket_types"</span> <span class="se
 <p>To list the locations, just issue a <code>GET</code> request to the <code>/locations</code> endpoint</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/locations"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 <span class="c"># Sample response</span>
@@ -683,7 +683,7 @@ curl <span class="s2">"https://www.fiwit.io/locations"</span> <span class="se">\
 <p>To list the locations, just issue a <code>GET</code> request to the <code>/users</code> endpoint</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
 curl <span class="s2">"https://www.fiwit.io/teams"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: 6PtBBkgAyoGsjc4jxfFs9Vih"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: API_TOKEN"</span> <span class="se">\</span>
   -H <span class="s2">"Accept: application/json"</span>
 
 <span class="c"># Sample response</span>
